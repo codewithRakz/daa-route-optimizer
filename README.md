@@ -44,7 +44,8 @@ pip install flask
 🚀 Step 2: Run the application
 python app.py
 🌐 Step 3: Open in browser
-http://127.0.0.1:5000/
+
+
 🌍 Live Demo
 
 👉 https://daa-route-optimizer--rakshitha110107.replit.app
