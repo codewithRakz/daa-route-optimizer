@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Route Optimizer</title>
+    <style>
+        body { font-family: Arial; text-align: center; background: #f0f0f0; }
+        h1 { color: #333; }
+        form { margin-top: 30px; }
+        input, button {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+        }
+        .result {
+            margin-top: 20px;
+            background: white;
+            padding: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<h1>🚀 Smart Route Optimizer</h1>
+
+<form action="/find" method="post">
+    <input type="text" name="start" placeholder="Start (Hostel)" required>
+    <input type="text" name="end" placeholder="End (Hospital)" required>
+    <br>
+    <button type="submit">Find Route</button>
+</form>
+
+{% if path %}
+<div class="result">
+    <h2>Best Path:</h2>
+    <p>{{ path }}</p>
+    <h3>Distance: {{ distance }}</h3>
+</div>
+{% endif %}
+
+</body>
+</html>
